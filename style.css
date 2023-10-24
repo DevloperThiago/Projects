@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(1, 32, 116);
+}
+
+.main-h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: end;
+    padding: 1.5rem 6rem;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0px 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.mobile-menu-icon {
+    display:none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.nav-item {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: rgb(222, 222, 222);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-item:active {
+    opacity: .5;
+}
+
+.Main-Project {
+    color: white;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    border-radius: 15px;
+    width: 70%;
+    border: none;
+}
+
+.main-text {
+    margin-bottom: 15px;
+}
+
+.project-a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.project-a:hover {
+    opacity: .8;
+}
+
+.project-a:active {
+    opacity: .5;
+}
+
+.project-img {
+    width: 500px;
+}
+
+select {
+    appearance: none;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    border-width: 1px;
+    color: rgb(0, 255, 85);
+    font-size: 16px;
+    margin-left: 87%;
+    border-radius: 5px;
+    background: none;
+    border-color: rgb(0, 255, 85);
+}
+
+select > option {
+    background-color: rgb(0, 14, 54);
+    border-color: rgb(0, 255, 85);
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 255, 85);
+}
+
+@media screen and (max-width: 900px) {
+    
+    select {
+        margin-left: 80%;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+
+    select {
+        margin-left: 80%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 1rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .icon {
+        width: 35px;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        text-align: center;
+    }
+
+    .Main-Project {
+        font-size: 13px;
+        padding: 30px;
+        max-width: 70%;
+    }
+
+    .project-img {
+        width: 400px;
+    }
+
+    select {
+        margin-left: 75%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .Main-Project {
+        font-size: 10px;
+    }
+
+    .project-a {
+        font-size: 16px;
+    }
+
+    .project-img {
+        width: 350px;
+    }
+
+    select {
+        margin-left: 70%;
+        font-size: 16px;
+    }
+
+}
